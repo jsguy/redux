@@ -167,7 +167,7 @@ describe('todos reducer', () => {
     ])
   })
 
-  it('should handle COMPLETE_ALL', () => {
+  it('should handle TOGGLE_ALL', () => {
     expect(
       todos([
         {
@@ -180,7 +180,7 @@ describe('todos reducer', () => {
           id: 0
         }
       ], {
-        type: types.COMPLETE_ALL
+        type: types.TOGGLE_ALL
       })
     ).toEqual([
       {
@@ -207,7 +207,7 @@ describe('todos reducer', () => {
           id: 0
         }
       ], {
-        type: types.COMPLETE_ALL
+        type: types.TOGGLE_ALL
       })
     ).toEqual([
       {
