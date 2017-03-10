@@ -39,7 +39,7 @@ export default function todos(state = initialState, action) {
           todo
       )
 
-    case COMPLETE_ALL:
+    case TOGGLE_ALL:
       const areAllMarked = state.every(todo => todo.completed)
       return state.map(todo => ({
         ...todo,
